@@ -72,5 +72,5 @@
     "random_seed":42,
     "neutralize_termini":"y"
   },
-  "USE_AA":"y"
+  "USE_AA":"n"
 }

@@ -30,7 +30,7 @@ package require psfgen
 psfcontext reset
 
 # ----------------------- user settings -------------------------------
-set TOPO        "data/top_all36_prot.rtf" ;# path to your CHARMM36 protein RTF
+set TOPO        "data/aa_simulations/charmm/toppar/top_all36_prot.rtf" ;# path to your CHARMM36 protein RTF
 set NTERM_STYLE "amine"              ;# "amine" (NNEU/NNEG) or "acetyl" (ACE/ACP)
 set SEGID       "PROA"               ;# segment id for the protein
 # ---------------------------------------------------------------------

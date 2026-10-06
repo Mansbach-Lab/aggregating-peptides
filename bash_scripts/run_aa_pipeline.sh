@@ -14,8 +14,8 @@ SEQUENCE=$1
 SEQUENCE_ID=$2
 
 platformName="OpenCL"
-VENV_DIR=$HOME/projects/venvs
-source $VENV_DIR/venv-cg/bin/activate
+VENV_DIR=/home/rmansbac/software/aggregating-peptides
+source $VENV_DIR/AGGENV/bin/activate
 
 ##########################################
 # Step 1: Generate structure from sequence using sequence_to_structure.py
