@@ -11,7 +11,7 @@ AcNtermini=${4:-"n"} # whether to use an effective Acetylated N-termini or not
 amidateCtermini=${5:-"n"} # whether to use an effective C-terminus amidation or not
 NMOL=${6:-64}
 BOX_L=${7:-13.3}
-
+VENV_DIR=$8
 cd $WDIR
 
 SCRIPT_DIR=$OLD_DIR"/scripts"
@@ -32,8 +32,8 @@ if [ "$INITIAL_CONFORMATION" != "monodisperse" ] && [ "$INITIAL_CONFORMATION" !=
     exit 1
 fi
 
-VENV_DIR=$HOME/projects/venvs
-VENV_DIR=$HOME/venvs
+#VENV_DIR=$HOME/projects/venvs
+#VENV_DIR=$HOME/venvs
 
 SECONDARY_STRUCTURE=$(printf 'E%.0s' $(seq 1 $NRES))
 
@@ -56,7 +56,7 @@ SYSTEM_TOP="system.top"
 
 #############################################
 # start virtual environment
-source $VENV_DIR/venv-cg/bin/activate
+source $VENV_DIR/bin/activate
 
 echo "if there is/are histidines in the peptide, we rename from HIS to HSD (neutral form)"
 # rename only the residue-name column (cols 18-20), any chain:
